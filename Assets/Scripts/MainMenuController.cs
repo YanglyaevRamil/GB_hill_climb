@@ -12,6 +12,9 @@ public class MainMenuController : BaseController
         _profilePlayer = profilePlayer;
         _view = LoadView(placeForUi);
         _view.Init(StartGame);
+
+        var TrailController = new TrailTrackController();
+        AddController(TrailController);
     }
 
     private MainMenuView LoadView(Transform placeForUi)
