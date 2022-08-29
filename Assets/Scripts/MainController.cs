@@ -5,7 +5,7 @@ public class MainController : BaseController
 {
     public MainController(Transform placeForUi, ProfilePlayer profilePlayer)
     {
-        _profilePlayer = profilePlayer;
+        _profilePlayer = profilePlayer; 
         _placeForUi = placeForUi;
         OnChangeGameState(_profilePlayer.CurrentState.Value);
         profilePlayer.CurrentState.SubscribeOnChange(OnChangeGameState);

@@ -2,7 +2,7 @@
 using Tools;
 using UnityEngine;
 
-public class InputAcceleration : BaseInputView
+public class InputAccelerationView : BaseInputView
 {
     public override void Init(SubscriptionProperty<float> leftMove, SubscriptionProperty<float> rightMove, float speed)
     {
